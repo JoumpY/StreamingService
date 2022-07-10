@@ -40,9 +40,10 @@ class Styles {
 
   static ButtonStyle npNames = ButtonStyle(
     alignment: Alignment.topCenter,
-    minimumSize: MaterialStateProperty.all(const Size(150, 40)),
-    maximumSize: MaterialStateProperty.all(const Size(150, 40)),
-    visualDensity: VisualDensity.compact
+    minimumSize: MaterialStateProperty.all(const Size(230, 40)),
+    maximumSize: MaterialStateProperty.all(const Size(230, 40)),
+    visualDensity: VisualDensity.compact,
+    splashFactory: NoSplash.splashFactory,
   );
 
   static TextStyle loginTextField = const TextStyle();

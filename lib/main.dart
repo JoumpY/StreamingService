@@ -12,7 +12,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: "Lato"),
+      theme: ThemeData(fontFamily: "Matrice"),
       debugShowCheckedModeBanner: false,
       title: "Splital",
       home: const PageLayout(),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:neon/neon.dart';
 
-import '../widgets/login_widgets/login_fields.dart';
+import '../widgets/Loginpage/login_widgets/login_fields.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);

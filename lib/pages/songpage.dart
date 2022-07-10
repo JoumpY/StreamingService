@@ -47,13 +47,15 @@ class SongPage extends StatelessWidget {
           FloatingActionButton(
             mini: true,
             backgroundColor: AppColors.pageBackBtn,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
             child: const Icon(Icons.arrow_left_sharp),
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const SizedBox(height: 5),
+              const SizedBox(height: 15),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
@@ -75,9 +77,7 @@ class SongPage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                   image: const DecorationImage(
                     //SONG COVER IMAGE
-                    image: AssetImage(
-                      "assets/images/songcover.jpg",
-                    ),
+                    image: AssetImage("assets/images/songcover.jpg"),
                     fit: BoxFit.cover,
                   ),
                 ),

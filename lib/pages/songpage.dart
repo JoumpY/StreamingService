@@ -1,7 +1,9 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
+
 import 'package:splital/themes/themes.dart';
+import '../widgets/SongPage/musiccontrolbar.dart';
+import '../widgets/SongPage/customslider.dart';
 
 class SongPage extends StatelessWidget {
   const SongPage({Key? key}) : super(key: key);
@@ -44,18 +46,21 @@ class SongPage extends StatelessWidget {
               ),
             ),
           ),
-          FloatingActionButton(
-            mini: true,
-            backgroundColor: AppColors.pageBackBtn,
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-            child: const Icon(Icons.arrow_left_sharp),
+          Positioned(
+            top: 20,
+            child: FloatingActionButton(
+              mini: true,
+              backgroundColor: AppColors.pageBackBtn,
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Icon(Icons.arrow_left_sharp),
+            ),
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const SizedBox(height: 15),
+              const SizedBox(height: 25),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
@@ -91,47 +96,9 @@ class SongPage extends StatelessWidget {
                 ]),
               ),
               const SizedBox(height: 25),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  IconButton(
-                    icon: const Icon(
-                      Icons.keyboard_double_arrow_left_outlined,
-                      color: AppColors.iconColor,
-                      size: 40,
-                    ),
-                    onPressed: () {},
-                  ),
-                  const SizedBox(width: 20),
-                  IconButton(
-                    icon: const Icon(
-                      Icons.pause,
-                      color: AppColors.iconColor,
-                      size: 40,
-                    ),
-                    onPressed: () {},
-                  ),
-                  const SizedBox(width: 20),
-                  IconButton(
-                    icon: const Icon(
-                      Icons.keyboard_double_arrow_right_outlined,
-                      color: AppColors.iconColor,
-                      size: 40,
-                    ),
-                    onPressed: () {},
-                  ),
-                ],
-              ),
+              const MusicControlBar(),
               const SizedBox(height: 10),
-              Slider(
-                value: 50,
-                min: 0,
-                max: 100,
-                thumbColor: AppColors.primaryButton,
-                activeColor: const Color.fromARGB(255, 0, 115, 121),
-                inactiveColor: Colors.white,
-                onChanged: (val) {},
-              ),
+              const CustomSlider(),
             ],
           ),
         ],

@@ -16,10 +16,11 @@ class PageLayout extends StatefulWidget {
 class _PageLayoutState extends State<PageLayout> {
   @override
   Widget build(BuildContext context) {
+    // ignore: unused_local_variable
     int selectedNavBtn = 0;
 
     List<Widget> pageItems = [
-      const SizedBox(height: 25),
+      const SizedBox(height: 40),
       const PageAppBar(),
     ];
 

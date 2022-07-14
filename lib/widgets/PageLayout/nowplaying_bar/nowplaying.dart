@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:splital/themes/themes.dart';
 
 //CUSTOM WIDGETS
 import 'components/names.dart';

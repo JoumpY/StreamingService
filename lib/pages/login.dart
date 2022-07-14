@@ -14,7 +14,7 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
-          /*
+            /*
           gradient: LinearGradient(
             begin: Alignment.bottomLeft,
             end: Alignment.topRight,
@@ -24,7 +24,7 @@ class LoginPage extends StatelessWidget {
             ],
           ),
           */
-        ),
+            ),
         height: double.infinity,
         width: double.infinity,
         child: Wrap(

@@ -9,8 +9,7 @@ class AccountBar extends StatefulWidget {
 }
 
 class _AccountBarState extends State<AccountBar> {
-  static String accountName = "Jumpiniasty";
-  double accountNameLength = accountName.length.toDouble();
+  String accountName = "Jumpiniasty";
 
   @override
   Widget build(BuildContext context) {

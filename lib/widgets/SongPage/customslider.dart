@@ -23,7 +23,6 @@ class CustomSlider extends StatelessWidget {
           onChanged: (val) {},
           onChangeEnd: (val) {
             //When the change has ended, play the song at the selected time stamp
-            print(val);
           },
         ),
       ),

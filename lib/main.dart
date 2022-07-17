@@ -11,7 +11,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: "Matrice"),
+      theme: ThemeData(fontFamily: "Lato"),
       debugShowCheckedModeBanner: false,
       title: "Splital",
       home: const PageLayout(),

@@ -71,6 +71,8 @@ flutter:
           weight: 700
         - asset: assets/fonts/Lato-Italic.ttf
           style: italic
+    - family: Matrice
+      fonts:
         - asset: assets/fonts/Matrice Regular.otf
 
   # To add assets to your application, add an assets section, like this:
